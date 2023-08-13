@@ -10,6 +10,14 @@ body {
     font-weight: 400;
     background-color: black;
     color: $font-color;
+
+    background:
+        url(/image/bats\ pic.png) 0 460px no-repeat,
+        url(/image/bg.png) top no-repeat,
+        url(/image/Frame\ 5363.png) 0 1100px no-repeat,
+        url(/image/bg\ pic\ \(1\).png) bottom no-repeat,
+        url(/image/BG\ \(1\).png) bottom no-repeat,
+        #1b0606
 }
 
 img {
@@ -40,6 +48,8 @@ h3 {
     max-width: 1462px;
     margin: 0 auto;
 }
+
+
 
 nav {
     padding: 30px 0;
@@ -82,6 +92,8 @@ nav {
 }
 
 .content {
+
+
     padding: 70px 0 194px;
     max-width: 706px;
 
@@ -114,7 +126,14 @@ nav {
 
 }
 
+.cinema {
+    position: absolute;
+    right: 0;
+    top: 90px;
+}
+
 .description {
+
     display: flex;
     justify-content: space-between;
     padding: 60px 0 80px;
@@ -139,18 +158,29 @@ nav {
 }
 
 .subsription {
-
+    position: relative;
     margin: 60px auto 0;
     width: 1150px;
     height: 630px;
-    border: 2px solid $border-red;
     border-radius: 15px;
+
+    & img {
+        position: absolute;
+        left: 50%;
+        top: 16px;
+
+        &:last-of-type {
+            transform: translate(-47%, -20px);
+        }
+
+    }
 
     & .chanel {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 150px 257px 0px;
+        gap: 50px;
+        padding: 150px 233px 0px;
     }
 
     & .text {
@@ -201,6 +231,7 @@ nav {
             font-weight: 400;
             line-height: 1.36;
             letter-spacing: 0.2px;
+            border-radius: 5px 0px 0px 5px;
             border: 1px solid #D0D0D1;
         }
 
@@ -218,7 +249,15 @@ nav {
 }
 
 .tv_chanel {
+    position: relative;
     margin-top: 160px;
+
+    & .img-title {
+        position: absolute;
+        left: 320px;
+        top: -40px;
+
+    }
 
     & h2 {
         margin-bottom: 20px;
@@ -393,18 +432,20 @@ nav {
         opacity: 0.9;
     }
 
+    & .list {
+        display: flex;
+        gap: 155px;
+    }
+
     & ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 150px;
+        width: 900px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         padding-bottom: 100px;
 
 
         & li {
-            break-inside: avoid;
             padding-right: 120px;
-            padding-bottom: 20px;
+            // padding-bottom: 20px;
             padding-top: 20px;
             position: relative;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -412,6 +453,8 @@ nav {
             font-size: 24px;
             font-weight: 500;
             line-height: 1.4;
+
+
 
 
             & input {
@@ -442,4 +485,73 @@ nav {
             }
         }
     }
+}
+
+footer {
+    margin-top: 90px;
+}
+
+.policy {
+    display: flex;
+    gap: 140px;
+    margin-bottom: 50px;
+
+    & ul {
+
+        &:not(:last-of-type) {
+            width: 200px;
+        }
+
+        &:last-of-type {
+            margin-left: auto;
+
+            & li:first-of-type {
+                margin-bottom: 20px;
+            }
+        }
+
+
+        & li:not(:last-of-type) {
+            margin-bottom: 10px;
+        }
+
+        & a {
+            color: $font-color;
+            font-size: 18px;
+            line-height: 1.4;
+            opacity: 0.8;
+        }
+    }
+}
+
+.conection {
+    display: flex;
+    margin-left: auto;
+    flex-wrap: wrap;
+    width: 225px;
+    gap: 30px;
+    font-size: 18px;
+    line-height: 1.4;
+    opacity: 0.8;
+    margin-bottom: 50px;
+
+    & li {
+
+        &:first-of-type {
+            padding-right: 20px;
+        }
+    }
+}
+
+.paymant {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.company {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    float: right;
 }
