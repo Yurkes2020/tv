@@ -47,6 +47,11 @@ h3 {
     max-width: 894px;
   }
 }
+@media (max-width: 769px) {
+  .conteiner {
+    max-width: 688px;
+  }
+}
 
 nav {
   margin-top: 30px;
@@ -66,6 +71,12 @@ nav {
   .logo {
     width: 72px;
     height: 65px;
+  }
+}
+@media (max-width: 769px) {
+  .logo {
+    width: 64px;
+    height: 58px;
   }
 }
 
@@ -133,6 +144,12 @@ nav {
     font-size: 38px;
   }
 }
+@media (max-width: 769px) {
+  .content h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
 .content p {
   font-size: 26px;
   font-weight: 400;
@@ -149,6 +166,12 @@ nav {
 @media (max-width: 991px) {
   .content p {
     font-size: 18px;
+  }
+}
+@media (max-width: 769px) {
+  .content p {
+    font-size: 17px;
+    margin-bottom: 34px;
   }
 }
 .content button {
@@ -173,6 +196,12 @@ nav {
     padding: 18px 28px;
   }
 }
+@media (max-width: 769px) {
+  .content button {
+    font-size: 17px;
+    padding: 16px 24px;
+  }
+}
 
 .cinema {
   position: absolute;
@@ -193,6 +222,14 @@ nav {
     top: 90px;
   }
 }
+@media (max-width: 769px) {
+  .cinema {
+    width: 540px;
+    height: 316px;
+    right: -205px;
+    top: 105px;
+  }
+}
 
 .description {
   display: flex;
@@ -209,6 +246,11 @@ nav {
     margin-top: 107px;
   }
 }
+@media (max-width: 769px) {
+  .description {
+    margin-top: 81px;
+  }
+}
 @media (max-width: 1441px) {
   .description img {
     width: 72px;
@@ -219,6 +261,12 @@ nav {
   .description img {
     width: 64px;
     height: 64px;
+  }
+}
+@media (max-width: 769px) {
+  .description img {
+    width: 48px;
+    height: 48px;
   }
 }
 .description li {
@@ -232,6 +280,15 @@ nav {
 @media (max-width: 991px) {
   .description li {
     max-width: 211px;
+  }
+}
+@media (max-width: 769px) {
+  .description li {
+    max-width: 119px;
+    text-align: center;
+  }
+  .description li img {
+    margin: 0 auto;
   }
 }
 .description li h3 {
@@ -251,6 +308,7 @@ nav {
   .description li h3 {
     font-size: 16px;
     margin-top: 20px;
+    line-height: 1.5;
   }
 }
 .description li p {
@@ -269,6 +327,11 @@ nav {
   .description li p {
     font-size: 16px;
     margin-top: 16px;
+  }
+}
+@media (max-width: 769px) {
+  .description li p {
+    display: none;
   }
 }
 
@@ -315,6 +378,13 @@ nav {
     width: 800px;
     height: 472px;
     transform: translate(-64%, -30px);
+  }
+}
+@media (max-width: 769px) {
+  .subsription img:last-of-type {
+    width: 688px;
+    height: 428px;
+    transform: translate(-66.5%, -38px);
   }
 }
 .subsription .chanel {
@@ -374,6 +444,11 @@ nav {
     font-size: 18px;
   }
 }
+@media (max-width: 991px) {
+  .subsription ul {
+    font-size: 16px;
+  }
+}
 .subsription li:before {
   content: "✔";
   padding-right: 20px;
@@ -385,6 +460,11 @@ nav {
 @media (max-width: 1441px) {
   .subsription li:not(:last-of-type) {
     padding-bottom: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .subsription li:not(:last-of-type) {
+    padding-bottom: 18px;
   }
 }
 .subsription form {
@@ -421,6 +501,12 @@ nav {
     width: 280px;
   }
 }
+@media (max-width: 769px) {
+  .subsription form input {
+    font-size: 16px;
+    width: 260px;
+  }
+}
 .subsription form button {
   padding: 20px 50px;
   color: #fff;
@@ -433,6 +519,12 @@ nav {
 @media (max-width: 1441px) {
   .subsription form button {
     font-size: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .subsription form button {
+    font-size: 18px;
+    width: 260px;
   }
 }
 
@@ -875,7 +967,8 @@ footer .policy ul a {
     font-size: 14px;
   }
 }
-footer .conection {
+
+.conection {
   display: flex;
   margin-left: auto;
   flex-wrap: wrap;
@@ -887,38 +980,40 @@ footer .conection {
   margin-bottom: 50px;
 }
 @media (max-width: 1440px) {
-  footer .conection {
+  .conection {
     font-size: 14px;
     width: 172px;
     gap: 12px;
   }
-  footer .conection img {
+  .conection img {
     width: 32px;
     height: 32px;
   }
 }
-footer .conection li:first-of-type {
+.conection li:first-of-type {
   padding-right: 20px;
 }
-footer .paymant {
+
+.paymant {
   display: flex;
   gap: 20px;
   margin-bottom: 35px;
 }
 @media (max-width: 1440px) {
-  footer .paymant img {
+  .paymant img {
     width: 84px;
     height: 32px;
   }
 }
-footer .company {
+
+.company {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.4;
   float: right;
 }
 @media (max-width: 1440px) {
-  footer .company {
+  .company {
     font-size: 11px;
   }
 }/*# sourceMappingURL=style.css.map */
